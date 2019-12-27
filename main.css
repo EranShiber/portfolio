@@ -24,15 +24,39 @@
     .main-text ul {
         display: flex;
         justify-content: space-evenly;
+        
     }
 
     
     .main-text ul li {
+
         display: inline-block;
-        
         padding: 15px 40px;
+        cursor: pointer;
         text-transform: uppercase;
     }
+    
+    .main-text ul a {
+        z-index: 1;
+        font-size: 1.5rem;
+        cursor: pointer;
+        list-style: none;
+        color: #fff;
+        font-weight: 900;
+        border: none;
+
+        border-bottom: 0px solid #fff;
+        border-radius: 100px;
+    }
+
+    .main-text ul a:hover {
+        border-bottom: 2px solid #fff;
+        border-radius: 100px;
+        box-shadow: 1px 4px 8px #ebe6e6;
+        transition-duration: 0.3s;
+    }
+
+
 
     .main-text h2 {
         text-align: center;
@@ -60,6 +84,7 @@
 
 
     .animations ul li {
+        
         position: absolute;
         display: block;
         list-style: none;
