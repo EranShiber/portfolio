@@ -104,11 +104,31 @@
     }
 
     .second-container {
+        margin-top: 10%;
         height:  100vw;
+        display: flex;
+
+    }
+
+    .second-container .img {
+        width: 100%;
+        height: auto;
+        margin-left: 30%;
+        flex-wrap: wrap;
+
     }
 
 
+    .second-container h3 {
+        text-align: center;
+        font-size: 2rem;
+        width: 450px;
+        margin-left: 15%;
+        color: black;
+        flex-wrap: wrap;
+        text-shadow: #7e3d9b 50px 10px 20px;
 
+    }
 
 
 
