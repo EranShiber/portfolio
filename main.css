@@ -1,0 +1,136 @@
+    *,*::after,*::before {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;  
+        color: #fff;
+        background-color: #ebe6e6;;
+        height: 100vh;
+    }
+
+    .main-container {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+
+    }
+
+    .main-text {
+        position: absolute;
+        width: 100%;
+        
+    }
+
+    .main-text ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    
+    .main-text ul li {
+        display: inline-block;
+        
+        padding: 15px 40px;
+        text-transform: uppercase;
+    }
+
+    .main-text h2 {
+        text-align: center;
+        margin-top: 20%;
+        font-size: 45px;
+    }
+
+
+    /* AIMATION BG */
+
+
+
+    .animations {
+        height: 100vh;
+        background: linear-gradient(to left, #7e3d9b, #ca6058);
+
+    }
+
+    .animations ul {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+
+    .animations ul li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #fff;
+        animation: boxMove 9s ease-in-out infinite alternate-reverse;
+    }
+
+    .v {
+        position: absolute;
+        display: block;
+        left: 50%;
+        margin-left: -20px;
+        bottom: 10%;
+        width: 40px;
+        height: 40px;
+        font-size: 70px;
+        animation: vMove ease-in-out 1s infinite;
+    }
+
+    .second-container {
+        height:  100vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes boxMove {
+    0% {
+        top: 90%;
+        opacity: 0.3;
+    }
+ 
+
+    100% {
+        top: 0%;
+        opacity: 0;
+        
+    }
+}
+
+
+
+@keyframes vMove {
+    0% {
+        bottom: 10%;
+    }
+    50% {
+        bottom: 7%;
+    }
+    100% {
+        bottom: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
