@@ -76,7 +76,6 @@
         width: 40px;
         height: 40px;
         font-size: 70px;
-        animation: vMove ease-in-out 1s infinite;
     }
 
     .second-container {
@@ -100,13 +99,16 @@
 
 @keyframes boxMove {
     0% {
-        top: 90%;
-        opacity: 0.3;
+        top: 0%;
+        opacity: 0;
     }
  
+    90% {
+        opacity: 0.2;
+    }
 
     100% {
-        top: 0%;
+        top: 100%;
         opacity: 0;
         
     }
