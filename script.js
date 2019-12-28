@@ -1,3 +1,37 @@
+const text = document.querySelector('.main-container .main-text h2');
+const strings = text.innerHTML;
+const splitStrings = strings.split(``);
+text.innerHTML = ""
+
+for (let i = 0; i < splitStrings.length; i++){
+text.innerHTML += `<span>${splitStrings[i]}<span/>`
+}
+
+
+let counter = 0;
+let runner = setInterval(timer, 5);
+
+function timer() {
+    let spans = text.querySelectorAll('span')[counter];
+    spans.classList.add('fade');
+    counter++
+    if(counter === 123){
+        stop();
+    }
+}
+function stop() {
+    clearInterval(runner);
+  
+}
+
+
+
+
+
+    
+    
+    
+    
     window.onscroll = function(x) {
 if(window.pageYOffset > 900) {
     document.querySelector('.side-fixed-nav').classList.remove('off');
@@ -5,8 +39,6 @@ if(window.pageYOffset > 900) {
         document.querySelector('.side-fixed-nav').classList.add('off');
     }
 }
-    
-
     
     const boxAera = document.querySelector('.box-aera');
     boxAera.addEventListener("mouseover", (x) => {

@@ -28,6 +28,22 @@
         
     }
 
+
+    h2 > span {
+        opacity: 0;
+    }
+
+    h2 span:nth-child(4n) {
+        transition: 5s ease;
+     
+    }
+
+    .fade {
+        opacity: 1;
+        transition: 1s ease;
+    }
+
+
     .main-btn {
         padding: 15px 40px;
         margin-top: 1%;
@@ -159,7 +175,7 @@
         width: 100%;
         height: auto;
         margin-left: 30%;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
 
     }
 
@@ -172,7 +188,7 @@
         color: black;
         flex-wrap: wrap;
         text-shadow: #7e3d9b 50px 10px 20px;
-
+        flex-wrap: nowrap;
     }
 
 
