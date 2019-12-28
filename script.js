@@ -1,3 +1,13 @@
+    window.onscroll = function(x) {
+if(window.pageYOffset > 900) {
+    document.querySelector('.side-fixed-nav').classList.remove('off');
+    }    else {
+        document.querySelector('.side-fixed-nav').classList.add('off');
+    }
+}
+    
+
+    
     const boxAera = document.querySelector('.box-aera');
     boxAera.addEventListener("mouseover", (x) => {
         document.querySelector(".v").style = `
@@ -25,5 +35,7 @@
             }
          })
 
- 
 }, 2000)
+
+
+
