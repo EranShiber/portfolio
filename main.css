@@ -245,7 +245,36 @@
 
 
 
+@media screen and (max-width:375px){
+    .mobile-view {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        z-index: 1 !important;
+        transition: ease-in 0.5s;
+    }
+    .mobile-view span{
+        display: inline-block;
+        width: 40px;
+        height: 4px;
+        margin-top: 10px;
+        margin-left: 1rem;
+        background-color: #fff;
+        z-index: 2;
+        transition: ease-in-out 1s;
+    }
 
+    .main-text .toggle {
+     display: none;
+     transition: 2s;
+     background-color: black;
+     transition: ease-in 0.5s;
+    }
+
+
+}
 
 
 

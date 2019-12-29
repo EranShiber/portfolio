@@ -24,6 +24,27 @@ function stop() {
   
 }
 
+// mobile nav:
+const mainUl = document.querySelector(".main-text .toggle")
+const mobileView = document.querySelector(".mobile-view");
+let isOpen = false;
+mobileView.addEventListener("click", () => {
+    if(!isOpen){
+        mainUl.style.display = "block";
+        
+        document.querySelector(".mobile-view span:nth-child(1)").style = "transform: rotateY( -770deg);"
+        document.querySelector(".mobile-view span:nth-child(2)").style = "transform: rotate( -770deg);"
+        document.querySelector(".mobile-view span:nth-child(3)").style = "transform: rotateY(-770deg);"
+        isOpen = true;
+    } else {
+        mainUl.style.display = "none";
+        document.querySelector(".mobile-view span:nth-child(1)").style = "transform: rotateY(0deg);"
+        document.querySelector(".mobile-view span:nth-child(2)").style = "transform: rotate(0deg);"
+        document.querySelector(".mobile-view span:nth-child(3)").style = "transform: rotateY(0deg);"
+        isOpen = false;
+    }
+})
+
 
 
 
