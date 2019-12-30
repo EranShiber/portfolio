@@ -61,7 +61,7 @@ if(window.pageYOffset > 900) {
     }
 }
     
-    const boxAera = document.querySelector('.box-aera');
+    const boxAera = document.querySelector('.box-area');
     boxAera.addEventListener("mouseover", (x) => {
         document.querySelector(".v").style = `
         animation: vMove ease-in-out 1s infinite;
