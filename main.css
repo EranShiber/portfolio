@@ -98,7 +98,7 @@
 
     .animations {
         height: 100vh;
-        background: linear-gradient(to left, #7e3d9b, #ca6058);
+        background: linear-gradient(to left, #683281, #83221b);
 
     }
 
@@ -111,7 +111,6 @@
 
 
     .animations ul li {
-        
         position: absolute;
         display: block;
         list-style: none;
@@ -135,7 +134,8 @@
         margin-top: 10%;
         height:  100vw;
         display: flex;
-
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 
@@ -172,11 +172,8 @@
 
 
     .second-container .img {
-        width: 100%;
-        height: auto;
-        margin-left: 30%;
-        flex-wrap: nowrap;
-
+    width: 100%;
+    height: auto;
     }
 
 
@@ -188,7 +185,6 @@
         color: black;
         flex-wrap: wrap;
         text-shadow: #7e3d9b 50px 10px 20px;
-        flex-wrap: nowrap;
     }
 
 

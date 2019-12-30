@@ -33,13 +33,13 @@ mobileView.addEventListener("click", () => {
         mainUl.style.display = "block";
         
         document.querySelector(".mobile-view span:nth-child(1)").style = "transform: rotateY( -770deg);"
-        document.querySelector(".mobile-view span:nth-child(2)").style = "transform: rotate( -770deg);"
+        document.querySelector(".mobile-view span:nth-child(2)").style = "transform: rotateX( -770deg);"
         document.querySelector(".mobile-view span:nth-child(3)").style = "transform: rotateY(-770deg);"
         isOpen = true;
     } else {
         mainUl.style.display = "none";
         document.querySelector(".mobile-view span:nth-child(1)").style = "transform: rotateY(0deg);"
-        document.querySelector(".mobile-view span:nth-child(2)").style = "transform: rotate(0deg);"
+        document.querySelector(".mobile-view span:nth-child(2)").style = "transform: rotateX(0deg);"
         document.querySelector(".mobile-view span:nth-child(3)").style = "transform: rotateY(0deg);"
         isOpen = false;
     }
