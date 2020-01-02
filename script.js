@@ -24,6 +24,12 @@ function stop() {
   
 }
 
+
+
+
+
+
+
 // mobile nav:
 const mainUl = document.querySelector(".main-text .toggle")
 const mobileView = document.querySelector(".mobile-view");
@@ -45,14 +51,6 @@ mobileView.addEventListener("click", () => {
     }
 })
 
-
-
-
-
-    
-    
-    
-    
     window.onscroll = function(x) {
 if(window.pageYOffset > 900) {
     document.querySelector('.side-fixed-nav').classList.remove('off');
@@ -60,6 +58,24 @@ if(window.pageYOffset > 900) {
         document.querySelector('.side-fixed-nav').classList.add('off');
     }
 }
+
+// fix the interval bug
+// adding card to the show-case
+const case_1 = document.querySelector('.case-1')
+case_1.addEventListener("mouseover", (x)=> {
+
+
+
+})
+
+
+
+
+setTimeout
+
+
+// end
+
     
     const boxAera = document.querySelector('.box-area');
     boxAera.addEventListener("mouseover", (x) => {
