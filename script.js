@@ -59,19 +59,29 @@ if(window.pageYOffset > 900) {
     }
 }
 
-// fix the interval bug
 // adding card to the show-case
-const case_1 = document.querySelector('.case-1')
-case_1.addEventListener("mouseover", (x)=> {
+const next = document.querySelector('.next')
+const backGround = document.querySelector('.case-1')
+
+let photos = ["./case-1/‏‏לכידה.png","./case-1/2.PNG", "./case-1/‏‏לכידה-1.PNG", "./case-1/3.PNG"]
+let photoView = 0;
 
 
 
+next.addEventListener("click", (x)=> {
+    if(photoView > 3) {
+        photoView = 0
+        backGround.style.background = `url(${photos[photoView]}) 100% 100%` // fix the 100%
+    } else {
+        backGround.style.background = `url(${photos[photoView]}) 100% 100%` // fix the 100%
+        console.log(photos[photoView]);   
+        photoView++
+    }
 })
 
 
 
 
-setTimeout
 
 
 // end
