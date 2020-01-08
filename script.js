@@ -24,6 +24,12 @@ function stop() {
   
 }
 
+
+
+
+
+
+
 // mobile nav:
 const mainUl = document.querySelector(".main-text .toggle")
 const mobileView = document.querySelector(".mobile-view");
@@ -45,14 +51,6 @@ mobileView.addEventListener("click", () => {
     }
 })
 
-
-
-
-
-    
-    
-    
-    
     window.onscroll = function(x) {
 if(window.pageYOffset > 900) {
     document.querySelector('.side-fixed-nav').classList.remove('off');
@@ -60,6 +58,34 @@ if(window.pageYOffset > 900) {
         document.querySelector('.side-fixed-nav').classList.add('off');
     }
 }
+
+// adding card to the show-case
+const next = document.querySelector('.next')
+const backGround = document.querySelector('.case-1')
+
+let photos = ["./case-1/‏‏לכידה.png","./case-1/2.PNG", "./case-1/‏‏לכידה-1.PNG", "./case-1/3.PNG"]
+let photoView = 0;
+
+
+
+next.addEventListener("click", (x)=> {
+    if(photoView > 3) {
+        photoView = 0
+        backGround.style.background = `url(${photos[photoView]}) 100% 100%` // fix the 100%
+    } else {
+        backGround.style.background = `url(${photos[photoView]}) 100% 100%` // fix the 100%
+        console.log(photos[photoView]);   
+        photoView++
+    }
+})
+
+
+
+
+
+
+// end
+
     
     const boxAera = document.querySelector('.box-area');
     boxAera.addEventListener("mouseover", (x) => {
